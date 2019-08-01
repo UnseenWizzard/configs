@@ -163,7 +163,9 @@ bindsym $mod+r mode "resize"
 bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
 
 #Locking, logout, shutdown
-bindsym $mod+l exec --no-startup-id i3lock -t -i ~/Pictures/Wallpapers/abstract.png
+bindsym $mod+l exec --no-startup-id i3lock -t -i ~/Pictures/Wallpapers/plane.png
+bindsym $mod+Mod1+x exec shutdown now
+
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume

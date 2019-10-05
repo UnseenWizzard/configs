@@ -48,7 +48,7 @@ client.urgent           $border_urgent      $bg_urgent          $text-color     
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec kitty #i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+q kill
@@ -173,7 +173,7 @@ bindsym $mod+r mode "resize"
 bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
 
 #Locking, logout, shutdown
-bindsym $mod+l exec --no-startup-id i3lock -t -i ~/Pictures/Wallpapers/plane.png
+bindsym $mod+l exec --no-startup-id ~/.config/i3/tools/lock_bar.sh
 bindsym $mod+Mod1+x exec shutdown now
 
 # Pulse Audio controls
@@ -213,3 +213,6 @@ bar {
         active_workspace    $bg_inactive_workspace $bg_inactive_workspace $text_inactive    
     }
 }
+
+#set wallpaper
+exec feh --bg-scale ~/Pictures/wallpapers/urban.jpg

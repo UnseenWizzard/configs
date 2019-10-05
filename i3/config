@@ -37,12 +37,12 @@ set $bg_inactive_workspace      "#002b36"
 set $bg_bar                     "#00181f"
 set $indicator                  "#b58900"
 
-# class                 border  bground text    indicator child_border
+# class                 border  	    bground t		ext    indicator 		child_border
 # window colors         border              background          text                 indicator
-client.focused          $border_active      $bg_active          $text_active         $border_active
-client.unfocused        $border_inactive    $bg_inactive        $text_inactive       $border_inactive
-client.focused_inactive $border_inactive    $bg_inactive        $text_inactive       $border_inactive
-client.urgent           $border_urgent      $bg_urgent          $text-color          $border_urgent
+client.focused          $border_active      $bg_active          $text_active         $border_active	 $border_active   
+client.unfocused        $border_inactive    $bg_inactive        $text_inactive       $border_inactive    $border_inactive 
+client.focused_inactive $border_inactive    $bg_inactive        $text_inactive       $border_inactive    $border_inactive 
+client.urgent           $border_urgent      $bg_urgent          $text_active          $border_urgent      $border_urgent   
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod

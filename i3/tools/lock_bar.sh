@@ -9,7 +9,8 @@ W='#dc322f'  # wrong
 V='#b58900'  # verifying
 
 i3lock \
--i ~/Pictures/wallpapers/urban_blur.jpg \
+-e -S=0 \
+-t -i ~/Pictures/wallpapers/urban_blur.jpg \
 --bar-indicator \
 --bar-position h \
 --bar-direction 1 \

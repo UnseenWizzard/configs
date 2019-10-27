@@ -48,7 +48,7 @@ client.urgent           $border_urgent      $bg_urgent          $text_active    
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty #i3-sensible-terminal
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+q kill
@@ -199,6 +199,7 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $mod+Shift+f exec firefox
 bindsym $mod+Shift+i exec idea
 bindsym $mod+Shift+s exec slack
+bindsym $mod+Shift+e exec urxvt -e ranger
 
 # Keyboard Toggle
 bindsym $mod+space exec ~/.config/i3/tools/toggleLayout.sh

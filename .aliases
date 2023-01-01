@@ -11,71 +11,44 @@ alias sshsetup='eval `ssh-agent`;ssh-add'
 alias cls='clear'
 
 # GIT aliases
-source /usr/share/bash-completion/completions/git
 alias status='git status'
 alias gs=status
-__git_complete status _git_status
-__git_complete gs _git_status
 
 alias gd='git diff'
 alias gds='git diff --staged'
-__git_complete gd _git_diff
-__git_complete gds _git_diff
 
 alias pull='git pull -r'
 alias gp=pull
-__git_complete pull _git_pull
-__git_complete gp _git_pull
 
 alias fetch='git fetch'
 alias gf=fetch
-__git_complete fetch _git_fetch
-__git_complete gf _git_fetch
 
 alias checkout='git checkout'
 alias gco=checkout
-__git_complete checkout _git_checkout
-__git_complete gco _git_checkout
 
 alias branch='git branch'
 alias gb=branch
-__git_complete branch _git_branch
-__git_complete gb _git_branch
 
 alias newbranch='git checkout -b'
 alias gnb=newbranch
-__git_complete newbranch _git_checkout
-__git_complete gnb _git_checkout
 
 alias add='git add'
 alias ga=add
-__git_complete add _git_add
-__git_complete ga _git_add
 
 alias gr='git restore'
 alias grs='git restore --staged'
-__git_complete gr _git_restore
-__git_complete grs _git_restore
 
 alias commit='git commit'
 alias gc=commit
-__git_complete commit _git_commit
-__git_complete gc _git_commit
 
 alias push='git push'
 alias gps=push
-__git_complete push _git_push
-__git_complete gp _git_push
 
 alias force='git push --force-with-lease'
 alias gpf=force
-__git_complete force _git_push
-__git_complete gpf _git_push
 
 alias upstream='git push --set-upstream'
 alias gpu=upstream
-__git_complete upstream _git_push
-__git_complete gpu _git_push
 
 alias order66=$'git fetch --prune && git branch -vv | grep \'origin/.*: gone\' | awk \'{print $1}\' | xargs -r git branch -D'
 
